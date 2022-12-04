@@ -1,0 +1,895 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+
+/* ############ Utility Classes ############ */
+
+.my-color-green{
+    color: #03702D !important;
+}
+
+.my-text-color{
+    color: #00431A;
+}
+
+.my-p-color{
+    color: #3F604C;
+}
+
+.p-text{
+    font-size: 20px;
+}
+
+.myh2-title{
+    font-size: 2.8rem;
+}
+
+.second-title{
+    font-size: 2rem;
+}
+
+.my-link{
+    text-decoration: none;
+}
+
+.my-link:link{
+    text-decoration: none;
+}
+
+.my-link:visited{
+    text-decoration: none;
+}
+
+
+
+
+/* ##################### Header Styling ######################## */
+
+
+/* ############# Nave Styling ############### */
+
+nav{
+    background-color: rgba(rgba(255, 255, 255, 0.9));
+    z-index: 99;
+}
+
+.my-company-name{
+    font-size: 25px;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    color: #00431A;
+    transition: all 0.2s ease-in;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover{
+    color: #03702D;
+}
+
+
+.nave-text-size{
+    font-size: 20px;
+}
+
+.navbar-light{
+    background-color: rgba(rgba(197, 197, 197, 0.9));
+}
+
+
+
+.my-btn{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03702D;
+    border-radius: 10px;
+}
+/* #################################### */
+
+.my-hero-section{
+    height: 900px;
+    background-image: url("../img/Banner\ Image.png");
+    object-fit: cover;
+    object-position: center;
+    background-position: center;
+    
+}
+
+.my-hero-section img{
+    object-fit: cover;
+}
+
+.h-p-content{
+    width: 50%;
+}
+
+.my-h-content h1{
+    font-size: 4.2rem;
+    padding-top: 7rem;
+}
+
+.my-h-content p{
+    font-size: 24px;
+    margin-top: 2rem;
+}
+
+.my-btns{
+    width: 290px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ####### Modal ################# */
+
+.modal-dialog{
+    max-width: 598px !important;
+}
+
+.my-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 596px !important;
+    height: 350px;
+}
+
+
+.my-btn2{
+    font-size: 20px;
+    width: 180px;
+    height: 55px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03702D;
+    border-radius: 10px;
+}
+
+/* ########## Play Btn ########### */
+
+
+.play-btn {
+    width: 54px;
+    height: 54px;
+    background: radial-gradient( #ffffff 60%, #ffffff 62%);
+    border-radius: 50%;
+    position: relative;
+    display: block;
+    box-shadow: 5px 10px 30px 3px #0000002a;
+  }
+  
+  /* triangle */
+  .play-btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-40%) translateY(-50%);
+    transform: translateX(-40%) translateY(-50%);
+    transform-origin: center center;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid #03702D;
+    z-index: 100;
+    -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  
+  /* pulse wave */
+  .play-btn:before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation: pulsate1 2s;
+    animation: pulsate1 2s;
+    -webkit-animation-direction: forwards;
+    animation-direction: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: steps;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 4px solid #03702dab;
+    top: -26%;
+    left: -26%;
+    background: rgba(198, 16, 0, 0);
+  }
+  
+  @-webkit-keyframes pulsate1 {
+    0% {
+      -webkit-transform: scale(0.6);
+      transform: scale(0.6);
+      opacity: 1;
+      box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 0;
+      box-shadow: none;
+  
+    }
+  }
+  
+  @keyframes pulsate1 {
+    0% {
+      -webkit-transform: scale(0.6);
+      transform: scale(0.6);
+      opacity: 1;
+      box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+    }
+    100% {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1);
+      opacity: 0;
+      box-shadow: none;
+  
+    }
+  }
+
+/* ################################# */
+
+/* ############## Search card ################ */
+
+.my-search-cont{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.my-search-card{
+    position: absolute;
+    width: 100%;
+    /* height: 397px; */
+    top: -200px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 40px 3px #0000002a;
+    z-index: 3;
+}
+
+.my-search-card h2{
+    font-size: 1.8rem;
+}
+
+.search-content-wraper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: flex-start;
+}
+
+
+
+.search-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24.44%;
+    height: 100px;
+}
+
+.form-select{
+    color: #1a1a1a;
+    background-color: #ffffff;
+}
+
+.form-select option{
+    border-bottom: 2px solid #03702D;
+}
+
+
+.form-select:active{
+    color: #272727;
+    box-shadow: 5px 10px 40px #00000033;
+}
+
+.search-item1{
+    border-right: 1px dashed #5A5A5A;
+}
+
+.search-item2{
+    border-right: 1px dashed #5A5A5A;
+}
+
+.search-item4{
+    border-left: 1px dashed #5A5A5A;
+}
+
+.submit-btn-box{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+/* ##################### Main Styling ################### */
+
+/* ############# About ########### */
+
+.about-section{
+    background-color: #F8FFFA;
+    padding-top: 25rem;
+}
+
+.about-bg{
+    height: 428px;
+    background-color: #03702D;
+    margin-bottom: 12rem;
+}
+
+.my-about-cont{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 432px;
+}
+
+.about-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-height: 612px;
+}
+
+.about-trext{
+    width: 50%;
+}
+
+.about-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ########### How it work ################## */
+
+.service-card{
+    margin: 0 auto;
+}
+
+.s-cards{
+    width: 320px;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 15px 50px 80px #00000013;
+    border-radius: 10px;
+
+}
+
+
+.s-cards img{
+    height: 100px;
+}
+
+
+/* ############### Gallery ############### */
+
+/* ############ Slick slider ############## */
+
+.my-sl-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sl-slider-box{
+    margin: 0.8rem;
+}
+
+.simg-w{
+    /* margin-left: 0.8rem;
+    margin-right: 0.8rem; */
+    width: 280px;
+    height: auto;
+    border-radius: 25px;
+}
+
+.simg-w img{
+    max-width: 280px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+}
+
+.variable-width{
+    width: 100%;
+    height: 600px;
+    padding: 2rem 2rem;
+}
+
+.simg1 img{
+    margin-top: 4rem;
+}
+
+.simg2 img{
+    margin-bottom: 4rem;
+}
+
+
+/* ########################## */
+
+.g-cards{
+    position: relative;
+    width: 360px;
+    height: 480px;
+    background-color: #ffffff;
+    box-shadow: 15px 50px 80px #00000013;
+    border-radius: 20px;
+
+}
+
+.g-cards img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.feature-hover{
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: #03702da9;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+.feature-hover h3{
+    font-size: 2.6rem;
+}
+
+.g-cards:hover .feature-hover{
+    opacity: 1;
+}
+
+
+
+
+/* ############## Testimonials Styling ##################### */
+
+.testimonials-section{
+    background-color: #F8FFFA;
+}
+
+.testimonial-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tes-img-wrap{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    box-shadow:  0px 10px 50px #0000003a;
+}
+
+.tes-img-wrap img{
+    height: 110px;
+    width: 110px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.testimonial-contents{
+    padding-left: 1.4em;
+    padding-right: 1.4em;
+}
+
+.testimonial-contents p{
+    font-size: 24px;
+    padding-left: 3.4em;
+    padding-right: 3.4em;
+}
+
+.testimonial-client h4{
+    font-size: 36px;
+}
+
+.testimonial-client p{
+    font-size: 22px;
+}
+
+.left-q-wr{
+    height: 38px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.left-q-wr img{
+    height: 38px;
+    left: 0;
+}
+
+.right-q-wr{
+    height: 38px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.right-q-wr img{
+    height: 38px;
+}
+
+/* ############### Faq Section ################### */
+
+.faq-section{
+    padding-top: 6rem;
+    background-color: #F8FFFA;
+}
+
+.faq-section h2{
+    padding-bottom: 4rem;
+}
+
+.faq-box{
+    width: 88%;
+    margin: 0 auto;
+}
+
+.faq-box hr{
+    color: #00431A;
+}
+
+.faq-h{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.faq-t{
+    display: none;
+}
+
+.togbtn-box{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.max-btn, .min-btn{
+    cursor: pointer;
+    display: inline;
+}
+
+
+.max-btn{
+    display: block;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.max-btn1-hide{
+    display: none;
+}
+
+.max-btn2-hide{
+    display: none;
+}
+
+.max-btn3-hide{
+    display: none;
+}
+
+.max-btn4-hide{
+    display: none;
+}
+
+/* ##################### Footer ################ */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    background-color: #03702D;
+}
+
+.fbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fbox-1{
+    width: 41%;
+}
+
+.fbox-2{
+    width: 18%;
+}
+
+.fbox-3{
+    width: 41%;
+}
+
+.social-box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cocial-icons{
+    margin: 0.2rem;
+    padding: 0.2em;
+    font-size: 27px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ######################### Media queries ########################## */
+
+
+@media (max-width: 1199px){
+    .my-company-name{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px){
+    
+}
+
+@media (max-width: 991px){
+    .my-company-name{
+        font-size: 20px;
+    }
+
+    .search-content-wraper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        height: auto;
+    }
+    
+    
+    
+    .search-items{
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+
+    .about-section{
+        padding-top: 40rem;
+    }
+
+    
+
+    .fbox-1{
+        width: 100%;
+    }
+    
+    .fbox-2{
+        width: 100%;
+    }
+    
+    .fbox-3{
+        width: 100%;
+    }
+    
+    .fbox{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .social-box{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+}
+
+@media (max-width: 819px){
+    .about-section {
+        background-color: #F8FFFA;
+        padding-top: 35rem;
+    }
+}
+
+@media (max-width: 767px){
+
+    .my-h-content h1{
+        font-size: 3rem;
+        padding-top: 4rem;
+    }
+
+    .my-search-card{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: -210px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 40px 3px #0000002a;
+        z-index: 3;
+    }
+
+    .h-p-content{
+        width: 80%;
+    }
+
+    .about-content{
+        display: block;
+        height: auto;
+        /* flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative; */
+    }
+
+    .about-bg{
+        height: auto;
+        background-color: #03702D;
+    }
+
+    .about-image{
+        width: 100%;
+        max-height: 400px;
+        margin-bottom: 1.6rem;
+    }
+    
+    .about-trext{
+        width: 100%;
+        padding-top: 4em;
+    }
+
+    .about-section{
+        background-color: #F8FFFA;
+        padding-top: 40rem;
+    }
+
+    .testimonial-contents{
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+    }
+    
+    .testimonial-contents p{
+        font-size: 24px;
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+    }
+
+    .myh2-title{
+        font-size: 2rem;
+    }
+
+    .g-cards{
+        position: relative;
+        width: 350px;
+        height: 470px;
+        background-color: #ffffff;
+        box-shadow: 15px 50px 80px #00000013;
+        border-radius: 20px;
+    
+    }
+    
+    .feature-hover{
+        top: 0;
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        background-color: #03702da9;
+        border-radius: 20px;
+        opacity: 0;
+        transition: all 0.3s ease-in;
+    }
+}
+
+@media (max-width: 841px){
+
+}
+
+@media (max-width: 768px){
+    
+}
+
+@media (max-width: 611px){
+    
+}
+
+@media (max-width: 540px){
+    
+}
+
+@media (max-width: 360px){
+
+    .my-btns{
+        width: 250px;
+    }
+
+    .my-h-content h1{
+        font-size: 2rem;
+        padding-top: 3rem;
+    }
+
+    .my-h-content p{
+        font-size: 16px;
+        margin-top: 2rem;
+    }
+
+    .my-search-card{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: -470px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 40px 3px #0000002a;
+        z-index: 3;
+    }
+
+    .about-section{
+        background-color: #F8FFFA;
+        padding-top: 23rem;
+    }
+}
+
+@media (max-width: 280px){
+    .about-section{
+        background-color: #F8FFFA;
+        padding-top: 25rem;
+    }
+}
